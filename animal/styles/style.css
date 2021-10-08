@@ -1,0 +1,193 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-bottom: 0;
+	color: #ffcc99;
+}
+
+.logo > p {
+	color: #ffffff;
+}
+
+h2 {
+	font-size: 44px;
+}
+
+header {
+	background-image: url(../img/Background.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	max-width: 1170px;
+	justify-content: space-between;
+	align-items: center;
+	margin:0 375px;
+	flex-grow: 1;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 30%;
+}
+
+.navbar {
+	width: 60%;
+}
+
+.navbar > ul {
+	justify-content: space-around;
+	display: flex;
+}
+
+
+.navbar > ul > li, a {
+	list-style-type: none;
+	text-decoration: none;
+	color: #ccc;
+}
+
+li > a:hover {
+	border-bottom: 3px solid #ffcccc;
+}
+
+.main__header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-grow: 9;
+
+}
+
+.text {
+	max-width: 470px;
+	color: #ffffff;
+}
+
+.btn__top {
+	background-color: #ffcc99;
+	color: #333333;
+	padding: 15px 30px;
+	border-radius: 20px;
+	border: none;
+}
+
+.btn__top:hover {
+	padding: 20px 33px;
+	font-weight: 700;
+}
+
+.info-text {
+	max-width: 415px;
+}
+
+.img {
+	width: 415px;
+}
+
+.main-text {
+	justify-content: center;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.mid-text {
+	max-width: 430px;
+}
+
+.main-ex {
+	justify-content: center;
+}
+
+.borderan {
+	display: flex;
+	flex-direction: column;
+}
+
+.ex {
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.rad {
+	border-radius: 50%;
+	background-color: white;
+	border: 2px solid #ffcc99;
+	height: 50px;
+	width: 50px;
+}
+
+.btn { 
+	padding: 10px 20px;
+}
+
+
+@media screen and (max-width: 425px) {
+
+	header {
+		background-image: none;
+		background: rgb(51,51,51);
+	    background: linear-gradient(170deg, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 35%, rgba(51,0,51,1) 100%);
+	}
+
+	.img {
+		max-width: 315px;
+	}
+
+	.container {
+		max-width: 300px;
+		margin: 10px;
+		flex-direction: column;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.navbar {
+		width: 100%;
+	}
+
+	.main__header {
+		align-content: center;
+		justify-content: center;
+		flex-grow: 15;
+	}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+	.container {
+		max-width: 800px;
+		margin: 100px;
+	}
+
+}

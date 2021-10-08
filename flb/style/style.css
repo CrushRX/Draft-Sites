@@ -1,0 +1,33 @@
+body {
+     background: url(http://webref.ru/assets/example/animate-bg3.png) 90% 90% no-repeat fixed, url(http://webref.ru/assets/example/animate-bg2.png) 40% 40% no-repeat fixed, url(http://webref.ru/assets/example/animate-bg1.jpg) no-repeat fixed;
+     background-size: auto, auto, cover;
+     -webkit-animation: ball 40s linear infinite;
+     animation: ball 40s linear infinite;
+ }
+ @-webkit-keyframes ball {
+     from {
+         background-position: 1800px 90%, 180% 40%, 0 0;
+     }
+     to {
+         background-position: -2000px 90%, -300px 20%, 0 0;
+     }
+ }
+ @keyframes ball {
+     from {
+         background-position: 1800px 90%, 180% 40%, 0 0;
+     }
+     to {
+         background-position: -2000px 90%, -300px 20%, 0 0;
+     }
+ }
+
+
+
+ canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid black;
+}
